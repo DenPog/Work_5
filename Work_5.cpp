@@ -23,27 +23,27 @@ int main()
 {
 	setlocale(0, "");
 
-	//îòêðûòèå ôàéëà
+	//Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¥ Ã´Ã Ã©Ã«Ã 
 	
 	ifstream vvod;
 	vvod.open ("in.txt");
 	vvod >> n;
 	vvod.close();
 
-	cout << "×èñëî â ôàéëå " << n << endl;	
+	cout << "chislo v file " << n << endl;	
 
-	//çàïèñü â ôàéë
-	ofstream fout("out.txt"); // ñîçäà¸ì îáúåêò êëàññà ofstream äëÿ çàïèñè è ñâÿçûâàåì åãî ñ ôàéëîì cppstudio.txt
+	//Ã§Ã Ã¯Ã¨Ã±Ã¼ Ã¢ Ã´Ã Ã©Ã«
+	ofstream fout("out.txt"); // Ã±Ã®Ã§Ã¤Ã Â¸Ã¬ Ã®Ã¡ÃºÃ¥ÃªÃ² ÃªÃ«Ã Ã±Ã±Ã  ofstream Ã¤Ã«Ã¿ Ã§Ã Ã¯Ã¨Ã±Ã¨ Ã¨ Ã±Ã¢Ã¿Ã§Ã»Ã¢Ã Ã¥Ã¬ Ã¥Ã£Ã® Ã± Ã´Ã Ã©Ã«Ã®Ã¬ cppstudio.txt
 
-	//íàõîæäåíèå ïðîñòûõ ÷èñåë <n
+	//Ã­Ã ÃµÃ®Ã¦Ã¤Ã¥Ã­Ã¨Ã¥ Ã¯Ã°Ã®Ã±Ã²Ã»Ãµ Ã·Ã¨Ã±Ã¥Ã« <n
 	for (i = 0;i <= n;++i) {
 		if (Number(i)){
 		//	cout << i << endl;
-			fout << i << endl; // çàïèñü ñòðîêè â ôàéë
+			fout << i << endl; // Ã§Ã Ã¯Ã¨Ã±Ã¼ Ã±Ã²Ã°Ã®ÃªÃ¨ Ã¢ Ã´Ã Ã©Ã«
 		}
 	}
 		
-	fout.close(); // çàêðûâàåì ôàéë
+	fout.close(); // Ã§Ã ÃªÃ°Ã»Ã¢Ã Ã¥Ã¬ Ã´Ã Ã©Ã«
 
 	system("pause");
     return 0;
